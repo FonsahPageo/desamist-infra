@@ -1,3 +1,3 @@
-resource "aws_iam_user" "ashprince" {
-  name = "ashprince"
-}
+# resource "aws_iam_user" "ashprince" {
+#   name = "ashprince"
+# }
