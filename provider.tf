@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "ashprincebackend"
+    bucket = "ashprincebackend1"
     dynamodb_table = "state-lock"
     key = "global/mystatefile/terraform.tfstate" # path in s3 busket to store the file
     region = "us-east-1"
@@ -9,13 +9,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "~> 5.0" 
     }
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region #"us-east-1"
   # access_key = ""
   # secret_key = ""
 }
