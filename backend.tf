@@ -1,7 +1,7 @@
 # create backend bucket into which we will store our state file
 
-resource "aws_s3_bucket" "ashprincebackend1" {
-  bucket = "ashprincebackend1"
+resource "aws_s3_bucket" "backend-bucket" {
+  bucket = "ashprincebackend"
   versioning {
     enabled = true
   }
